@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="Assets/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Assets/bootstrap-4.5.3-dist/css/bootstrap.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./Assets/js/storage.js"></script>
+    <link rel="stylesheet" href="./Assets/xss/box.css">
+
+       
+    
+</head>
+
+
+<body class="container" style="color: red; background-color: white;">
+    <script src="Assets/js/storage.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: white;">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+            
+              <li class="nav-item">
+                <a class="nav-link" href="tel:+2347069160515">Contact Us</a>
+              </li>
+          
+      
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <i  style="margin-right: 30px; color: red;" class="fa fa-instagram"> <a href="https://www.instagram.com/omarr_bakatara"> Instagram</a>  </i> 
+              <a href="register.html" class="mr-sm-2 btn" style="color: white; background-color: black; border-radius: 5px;" > <b> Create account </b> </a>
+              <a href="login.html" class="btn btn-outline-success my-2 my-sm-0" style="background-color: black; border-radius: 5px; color: white;">Log in</a>
+          </form>
+        </div>
+      </nav>
+
+      <br><br><br>
+    <div class="container">
+        <div class="row" id="bj">
+           
+           <div class="col-sm-6" style="overflow: hidden;" >
+               <img style="height: 70px;;" src="fieldly.jpg" alt="">
+               <br>
+             <form action="">
+                  
+           
+                    <b>
+                        <h2 style="color: black;">
+                          <b>  Log In </b> 
+                        </h2>
+                    </b>
+                    <br>
+                  
+                    <p>
+                       Login with your data that you provided during registration.
+                    </p>
+                    
+                    <label for="username" style="color: red;"> <b> Username:</b> </label>
+                    <input type="text" id="username" class="form-control" placeholder="Enter your username">
+                    <br>
+                  
+                    <label for="password"style="color: red;"> <b> Password:</b>  </label>
+                    <input type="password" id="pword" class="form-control" placeholder="Enter your password">
+                    <br>
+                    <p>
+                        <input type="checkbox" name="checkbox" id="">   Keep me logged in
+                       </p>
+                       
+                    <button class="btn btn-primary form-control bt"  onclick="Auth()" > 
+                       Login
+                  
+                    </button>     
+                    <br>
+                    <br>
+                       
+                    <p class="center">
+                        If you don't have an account please  <a href=""> click here </a> 
+                    </p>
+                 
+                      
+                    <P class="center">
+                        <a href=""> Forgot password?</a>
+                    </P>
+             
+             </form>
+
+           </div>
+
+           <div class="col-sm-6" style="background-color: black; overflow: hidden;" id="">
+                    <div class="box">
+                       <div class="whitebox">
+                           <div class="col">
+                            <i class="fa fa-user fa-4x" id="ic" aria-hidden="true"></i>
+                                    <b> &nbsp &nbsp &nbsp  &nbsp &nbsp&nbsp &nbsp &nbsp UMAR BAKATARA</b> 
+                                     <br> <p style="margin-left: 100px;"> Tenant </p> 
+                                    
+                             <br>
+                            <i class="fa fa-envelope" id="ic" aria-hidden="true"></i>
+                            <b class="center">Umar23@gmail.com</b>
+                            <br>
+                            <br>
+                            <i class="fa fa-phone" id="ic" aria-hidden="true"></i>
+                            <b class="center">  +2347069160515</b> 
+
+                           <br>
+                           <br>
+                           <i class="fa fa-home" id="ic" aria-hidden="true"></i>
+
+                             <b class="center"> No 7, 4th Avenue, Maitama, Abuja </b>
+                           </div>
+                           <br>
+
+
+                       </div>
+                        
+
+                        </div>
+                        <div class="whitebox2">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <div class="spinner-border text-primary" style="margin-left: 5px; color: red;"  role="status">
+                                        <span class="sr-only">Loading...</span>
+                                      </div>
+                                    
+                                </div>
+                                <div class="col" style="margin-right: 200px;;">
+                                    <h3 style="color: dodgerblue;">
+                                        9.743.00$
+                                    </h3>
+    
+                                </div>
+                                 
+
+                            </div>
+                           <br>
+                        
+
+                        
+                                     <i class="center" id="mo">
+                                        Total recipients amount this month.
+
+                                     </i>
+                                    
+                                     <br>
+                                     
+                                     <i style="color: gray;" id="mv">
+                                        
+                                            Assign payment  >
+                                    
+                                     </i>
+                                    
+                        </div>
+
+                    </div>
+                            
+                          
+                        </p>
+
+                      
+                       </div>
+                          </div>
+
+                
+            
+           
+              
+                          
+
+                
+                 
+
+            </div>
+
+
+              
+              </div>
+               
+              
+            
+
+        </div>
+
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer  style="text-align:center; height: 100px; border-radius: 5px; background-color: red; color: white;">
+   <b style="padding-top: 200px;">
+    All rights reserved 2020
+   </b> 
+    </footer>
+
+
+    
+
+
+   
+
+</body>
+</html>
